@@ -9,7 +9,7 @@ button#grid-size-button {
     border-radius: 10px;
     border: none;
     border-bottom: 5px solid;
-    background: limegreen;
+    background: #EAF2E3;
     font-family: Verdana;
     font-size: 2em;
 }
@@ -33,7 +33,7 @@ button#grid-size-button:active {
     grid-auto-flow: dense;
     height: 60vh;
     width: 60vw;
-    background: goldenrod;
+    background: #F25757;
     border: solid;
     padding: 5px;
     overflow: hidden;
@@ -43,7 +43,7 @@ button#grid-size-button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: lightblue;
+    background: #F2CD60;
     border: 2px solid;
     word-break: break-all;
 }

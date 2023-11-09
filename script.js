@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 1; i <= gridSize * gridSize; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
-            square.textContent = i;
             container.appendChild(square);
         }
     })
