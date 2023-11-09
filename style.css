@@ -29,13 +29,11 @@ button#grid-size-button:active {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeaT(16, 1fr);
-    gap: 5px;
     grid-auto-flow: dense;
-    height: 60vh;
+    height: 80vh;
     width: 60vw;
     background: #F25757;
     border: solid;
-    padding: 5px;
     overflow: hidden;
 }
 
@@ -44,11 +42,6 @@ button#grid-size-button:active {
     justify-content: center;
     align-items: center;
     background: #F2CD60;
-    border: 2px solid;
-    word-break: break-all;
-}
-
-.square:hover {
-    background: yellow;
-    transition: background 0.7s, height 0.5s, width 0.5s;
+    height: 50px;
+    width: 50px;
 }
