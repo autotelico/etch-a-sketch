@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.querySelector('.container');
     const gridSizeBtn = document.querySelector('#grid-size-button');
+    let isDrawing = false;
 
     gridSizeBtn.addEventListener('click', () => {
         const squares = document.querySelectorAll('.square');
@@ -24,8 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const square = document.createElement('div');
         square.classList.add('square');
         container.appendChild(square);
-        square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'purple';
+
+
+        square.addEventListener('mousedown', () => {
+            isDrawing = true;
+        })
+
+        square.addEventListener('mouseup', () => {
+            isDrawing = false;
+        })
+        square.addEventListener('mousemove', () => {
+            if (isDrawing) {
+            square.style.backgroundColor = 'black';
+            }
         })
     }
 })
