@@ -24,6 +24,42 @@ button#grid-size-button:active {
     border-bottom: 3px solid;
 }
 
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(226, 201, 56);
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    top: 50vh;
+    left: 45px;
+}
+
+.menu-content-container {
+    /* background: rgb(211, 197, 119); */
+    /* border: 3px solid black; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-range-bar {
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+
+}
+
 .container {
     margin: 100px auto;
     display: grid;
@@ -42,6 +78,5 @@ button#grid-size-button:active {
     justify-content: center;
     align-items: center;
     background: #EAF2E3;
-    height: 5px;
-    width: 5px;
+    
 }
