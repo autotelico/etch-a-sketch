@@ -49,9 +49,27 @@ button#grid-size-button:active {
     align-items: center;
 }
 
-#grid-range-bar {
-    margin: 0 auto;
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    background: #ccc; /* Track color */
+    border-radius: 5px;
+    border: 0.5px solid rgba(211, 211, 211, 0.144);
+    outline: none;
+    margin: 20px 0;
+  }
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: black;
 }
+
+
 
 p {
     text-align: center;
