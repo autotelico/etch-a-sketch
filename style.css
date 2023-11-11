@@ -40,8 +40,6 @@ button#grid-size-button:active {
 }
 
 .menu-content-container {
-    /* background: rgb(211, 197, 119); */
-    /* border: 3px solid black; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -86,7 +84,7 @@ p {
     grid-auto-flow: dense;
     height: 80vh;
     width: 60vw;
-    background: #F25757;
+    background: #ccc;
     border: solid;
     overflow: hidden;
 }
@@ -97,4 +95,11 @@ p {
     align-items: center;
     background: #EAF2E3;
     
+}
+
+@media screen and (orientation: portrait) {
+    .menu-container {
+        width: 60vw;
+        margin-right: 50px;
+    }
 }
