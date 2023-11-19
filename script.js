@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let gridSize = prompt("Select your grid size: ", 7);
 
-        while (gridSize > 200 || gridSize < 25) {
-            gridSize = prompt("Cannot make grids smaller than 25x25 or bigger than 200x200 squares in size. Select your grid size again: ", 7);
+        while (gridSize > 200) {
+            gridSize = prompt("Cannot make grids bigger than 200x200 squares in size. Select your grid size again: ", 7);
         }
     
 
