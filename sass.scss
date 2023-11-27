@@ -1,0 +1,11 @@
+$container-height: 800px;
+$default-font: Verdana;
+
+
+#container {
+    height: $container-height;
+}
+
+button {
+    font-family: $default-font;
+}
