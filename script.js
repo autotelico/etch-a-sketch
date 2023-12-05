@@ -1,27 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.querySelector('.container');
-    const gridSizeBtn = document.querySelector('#grid-size-button');
     const gridRangeBar = document.querySelector('#grid-range-bar');
     let isDrawing = false;
     
-    // Ensure that the gridSize is defined
     let gridSize = gridRangeBar.value;
 
     gridRangeBar.addEventListener('input', () => {
-        // Clear the grid when the range bar value changes
         clearGrid();
         gridSize = gridRangeBar.value;
-        // Build the grid with the new size
         buildGrid(gridSize);
     });
 
-    // Limit the gridSize to 200
     while (gridSize > 200) {
         gridSize = prompt("Cannot make grids bigger than 200x200 squares in size. Select your grid size again: ", 7);
     }
 
-    // Set the grid template columns and rows
     container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 
@@ -33,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function buildGrid(size) {
-        // Build a grid with 'size' number of squares
         for (let i = 1; i <= size * size; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
